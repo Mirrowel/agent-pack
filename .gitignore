@@ -5,6 +5,9 @@
 .agents/skills/*
 !.agents/skills/agent-browser/
 !.agents/skills/browse/
+!.agents/skills/codebase-design/
+!.agents/skills/grill-with-docs/
+!.agents/skills/grilling/
 !.agents/skills/methodical-problem-solving/
 !.agents/skills/proactive-bug-finding/
 !.agents/skills/writing-documentation/
