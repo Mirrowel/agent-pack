@@ -1,0 +1,3 @@
+# Keep bytes exact: skills ship scripts and assets that must not have their
+# line endings rewritten on commit or checkout.
+* -text

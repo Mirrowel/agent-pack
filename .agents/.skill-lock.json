@@ -1,0 +1,155 @@
+{
+  "version": 3,
+  "skills": {
+    "design-taste-frontend": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Leonxlnx/taste-skill.git",
+      "skillPath": "skills/taste-skill/SKILL.md",
+      "skillFolderHash": "90f92ba7a3ce514cf85a2809583712dbd14106ea",
+      "installedAt": "2026-05-28T00:45:27.837Z",
+      "updatedAt": "2026-11-25T00:57:33.137Z",
+      "commit": "d1a2bb41d927083ac7118f60cfc9cdf711810ea0"
+    },
+    "impeccable": {
+      "source": "pbakaus/impeccable",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/pbakaus/impeccable.git",
+      "commit": "b49177d32788f2dc585c42831d845dacf1ebed2c",
+      "skillPath": ".agents/skills/impeccable/SKILL.md",
+      "skillFolderHash": "c4298d9d001a41c9c2a3797fddee509bc4dd7ba0",
+      "installedAt": "2026-05-28T00:46:30.953Z",
+      "updatedAt": "2026-11-25T00:10:14.541Z"
+    },
+    "codebase-design": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/codebase-design/SKILL.md",
+      "skillFolderHash": "4cbe1c131e1ea54109cb1e4e5f3c505810db6606",
+      "installedAt": "2026-07-17T02:07:59.117Z",
+      "updatedAt": "2026-11-06T10:36:09.358Z"
+    },
+    "grill-with-docs": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/grill-with-docs/SKILL.md",
+      "skillFolderHash": "eedaf2562c83155115e9c649fa3ecaac2e10e81d",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-07-17T02:07:59.122Z",
+      "updatedAt": "2026-11-06T10:36:10.523Z"
+    },
+    "grilling": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/grilling/SKILL.md",
+      "skillFolderHash": "f551b6e0d219fdda0b6abf277f8f915b3127d1e9",
+      "installedAt": "2026-07-17T02:07:59.123Z",
+      "updatedAt": "2026-11-06T10:36:10.936Z"
+    },
+    "improve-codebase-architecture": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "commit": "d65391149dbb5fe76478e76fa8d5122b2aa5a70e",
+      "skillPath": "skills/engineering/improve-codebase-architecture/SKILL.md",
+      "skillFolderHash": "587147dd230da299cc5e84971cb0a33f6676f8a6",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-07-17T02:07:59.125Z",
+      "updatedAt": "2026-11-25T01:24:23.529Z"
+    },
+    "modern-web-guidance": {
+      "source": "GoogleChrome/modern-web-guidance",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/GoogleChrome/modern-web-guidance.git",
+      "commit": "2b4aa13a72dd47cd135b06ce5abfccd92e19b24f",
+      "skillPath": "skills/modern-web-guidance/SKILL.md",
+      "skillFolderHash": "94cd548883b7cd735ee0d2bdd723c68a212a0933",
+      "installedAt": "2026-11-22T21:34:01.165Z",
+      "updatedAt": "2026-11-25T00:57:42.992Z"
+    },
+    "domain-modeling": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "commit": "d65391149dbb5fe76478e76fa8d5122b2aa5a70e",
+      "skillPath": "skills/engineering/domain-modeling/SKILL.md",
+      "skillFolderHash": "ea30ee454ba264543dbe40737973b1a5afb9f0e6",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-11-25T01:25:01.036Z",
+      "updatedAt": "2026-11-25T01:25:01.036Z"
+    },
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+      "skillPath": "skills/react-best-practices/SKILL.md",
+      "skillFolderHash": "343db72180d05814949fef7d46be96b5c6ee86b3",
+      "installedAt": "2026-11-25T03:55:51.858Z",
+      "updatedAt": "2026-11-25T03:55:51.858Z"
+    },
+    "pr": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "commit": "d65391149dbb5fe76478e76fa8d5122b2aa5a70e",
+      "skillPath": "skills/engineering/pr/SKILL.md",
+      "skillFolderHash": "00b896d811adffad747c7ca30078d909d60c7f93",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-11-25T03:57:24.656Z",
+      "updatedAt": "2026-11-25T03:57:24.656Z"
+    },
+    "security-review": {
+      "source": "getsentry/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/getsentry/skills.git",
+      "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+      "skillPath": "skills/security-review/SKILL.md",
+      "skillFolderHash": "7806c573500d4d254edb421542307b5b33b6a804",
+      "installedAt": "2026-11-25T03:57:32.866Z",
+      "updatedAt": "2026-11-25T03:57:32.866Z"
+    },
+    "gha-security-review": {
+      "source": "getsentry/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/getsentry/skills.git",
+      "commit": "a582c51ee29d0f35e6ac321340796f77d43da733",
+      "skillPath": "skills/gha-security-review/SKILL.md",
+      "skillFolderHash": "fb6e2d58f1fa676218419807f3a861814b8e640f",
+      "installedAt": "2026-11-25T03:57:38.989Z",
+      "updatedAt": "2026-11-25T03:57:38.989Z"
+    },
+    "security-audit": {
+      "source": "cloudflare/security-audit-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cloudflare/security-audit-skill.git",
+      "commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "skillPath": "skills/security-audit/SKILL.md",
+      "skillFolderHash": "ccbc33ed119b28c3ef7b44a7e2081ab191ad63af",
+      "installedAt": "2026-11-25T03:57:44.883Z",
+      "updatedAt": "2026-11-25T03:57:44.883Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "cline",
+    "codex",
+    "cursor",
+    "droid",
+    "fx",
+    "gemini-cli",
+    "github-copilot",
+    "kilo",
+    "kimi-code-cli",
+    "opencode",
+    "pi",
+    "warp",
+    "zed"
+  ]
+}

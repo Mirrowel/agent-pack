@@ -1,0 +1,14 @@
+# Skills under .agents/skills that `npx skills` installed from upstream are not
+# committed: the agent fetches each one from the commit recorded in
+# .agents/.skill-lock.json. A skill is published by un-ignoring it here, and a
+# committed copy always wins over the fetch.
+.agents/skills/*
+!.agents/skills/agent-browser/
+!.agents/skills/browse/
+!.agents/skills/methodical-problem-solving/
+!.agents/skills/proactive-bug-finding/
+!.agents/skills/writing-documentation/
+
+__pycache__/
+.DS_Store
+Thumbs.db
