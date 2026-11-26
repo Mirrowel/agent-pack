@@ -10,6 +10,26 @@ warn()    { echo "::warning::agent-browser: $*"; }
 summary() { echo "EXT-SUMMARY: $*"; }
 start=$(date +%s)
 
+# Chrome's first launch reads its install tree from disk: about 450 MB, which
+# takes 2.7 to 5.1 seconds for the binary alone on a slow runner and turns the
+# launch check below into an 8 to 9 second wait. The read happens in the
+# background now, beside the network-bound npm install, so the files are in
+# the page cache by the time the check runs. Failure is irrelevant: a launch
+# that still has to read the disk just pays what it paid before.
+warm_browser() {
+  local p resolved
+  for p in google-chrome google-chrome-stable chromium chromium-browser chrome; do
+    resolved="$(command -v "$p" 2>/dev/null)" || continue
+    resolved="$(readlink -f "$resolved" 2>/dev/null || printf '%s' "$resolved")"
+    case "$resolved" in
+      /opt/*) find "$(dirname "$resolved")" -type f -exec cat {} + >/dev/null 2>&1 & ;;
+      *) cat "$resolved" >/dev/null 2>&1 & ;;
+    esac
+    return 0
+  done
+}
+warm_browser
+
 # --- CLI -------------------------------------------------------------------
 npm_log="$(mktemp)"
 if ! npm install -g agent-browser --ignore-scripts=false --loglevel=warn >"$npm_log" 2>&1; then
