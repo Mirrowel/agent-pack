@@ -18,6 +18,7 @@ if ! npm install -g agent-browser --ignore-scripts=false --loglevel=warn >"$npm_
   summary "npm install failed"
   exit 1
 fi
+t_npm=$(date +%s)
 
 # Blocked install scripts and engine problems must never pass silently. Plain
 # npm warnings (deprecations and the like) are counted, not annotated.
@@ -76,10 +77,14 @@ if ! smoke; then
   chrome="${chrome}, system deps installed"
 fi
 
+# Where the time went: a slow npm registry and a slow first launch need
+# different fixes, and the summary is the only part that reaches the log.
+timings="npm install $(( t_npm - start ))s, browser check $(( $(date +%s) - t_npm ))s"
+
 if [ "${warn_count:-0}" != "0" ]; then
-  summary "agent-browser ${version:-?} | chrome: ${chrome} | launch: ok | npm warnings: ${warn_count} (first: ${first_warn})"
+  summary "agent-browser ${version:-?} | chrome: ${chrome} | launch: ok | ${timings} | npm warnings: ${warn_count} (first: ${first_warn})"
 else
-  summary "agent-browser ${version:-?} | chrome: ${chrome} | launch: ok"
+  summary "agent-browser ${version:-?} | chrome: ${chrome} | launch: ok | ${timings}"
 fi
 summary "done in $(( $(date +%s) - start ))s"
 exit 0
