@@ -1,0 +1,18 @@
+# Skills the mirrobot agent installations must not load, one directory name
+# per line; # comments allowed.
+#
+# The content-pack installer reads this file from the root of any fetched pack
+# and combines the lists it finds. When no pack carries one, it falls back to
+# .github/content-packs.exclude.txt in the consumer repository, so a fork can
+# keep its own lens without editing the library.
+#
+# These six cannot work as an asynchronous GitHub agent: browse needs an
+# operator's logged-in browser; grilling, grill-with-docs and
+# improve-codebase-architecture interview a human; domain-modeling and
+# security-audit belong to their own workflows.
+browse
+grilling
+grill-with-docs
+improve-codebase-architecture
+domain-modeling
+security-audit
