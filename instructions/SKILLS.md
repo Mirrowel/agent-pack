@@ -16,7 +16,7 @@ Skill descriptions self-trigger unreliably, and some claim more than they should
 - adding or reshaping a module interface, seam or adapter; making code testable → codebase-design
 - project terminology, GLOSSARY.md, ADRs → domain-modeling
 - stress-testing a plan or decision ("grill") → grilling, with domain-modeling when glossary and ADRs should be recorded
-- writing or restructuring docs, README, product copy; writing or editing instructions for agents (skills, AGENTS.md, instruction packs) → writing-documentation (its `FOR-AGENTS.md` holds the reference for agent text)
+- writing or restructuring docs, README, product copy; writing or editing instructions for agents (skills, AGENTS.md, instruction packs) → writing-documentation (its `FOR-AGENTS.md` holds the reference for agent text); compressing or minimizing a prompt, pack or skill for the model → the same skill, its `COMPRESSION.md`
 - "security review", "find vulnerabilities" in code → security-review
 - GitHub Actions workflows, CI security → gha-security-review
 - a deep security audit, when the user asks for one → security-audit (a review stays with security-review)
