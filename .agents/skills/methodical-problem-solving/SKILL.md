@@ -11,6 +11,9 @@ show a regression test that fails without the fix and passes with it.
 
 Work the phases in order. Skipping a phase is how fixes turn into new bugs.
 
+What you work out belongs in your thinking. Write to the user only what is
+useful for them to see.
+
 Scale exception: when the cause is visible on sight (a typo, a missing null
 check, an obvious off-by-one), run Phase 1, Phase 5 and Phase 6 only. A trivial
 fix such as a typo still needs no regression test.
@@ -44,12 +47,13 @@ fix such as a typo still needs no regression test.
 
 ## Phase 2: Deconstruct to fundamental truths
 
-- State what *must* be true for the system to behave correctly, as a chain:
+- Spell out, in your thinking, what *must* be true for the system to behave
+  correctly, as a chain:
   "input X arrives → parser produces Y → system Z reacts → state becomes W".
 - Each link in that chain is a checkable claim. The bug lives in exactly one
   broken link (occasionally two). Your job is to find which.
-- List your assumptions explicitly. The bug is usually hiding inside the
-  assumption you were least willing to write down.
+- Spell out every assumption. The bug is usually hiding inside the one you
+  were least willing to spell out.
 - Do not guess library or framework behavior. Read the actual source at the
   version the project pins (vendored dependencies, the installed package, the
   library's repository, its shipped docs). Source lies less than documentation,
@@ -76,7 +80,7 @@ fix such as a typo still needs no regression test.
 
 ## Phase 4: Prove the root cause
 
-- Generate 3 to 5 ranked hypotheses before testing any; the first plausible
+- Spell out 3 to 5 ranked hypotheses before testing any; the first plausible
   idea anchors. Then test one at a time, each with a *falsifiable prediction*:
   "if this is the cause, then changing/logging A must show B". Then check.
 - If the prediction fails, the hypothesis is dead. Do not rescue it with
@@ -119,9 +123,9 @@ fix such as a typo still needs no regression test.
 
 ## Phase 7: Reflect
 
-- One sentence each: what was the root cause, why did it survive until now,
-  and is the same defect pattern lurking elsewhere in the codebase? If yes,
-  grep for siblings and report them. Fix them only when asked.
+- One to three sentences each: what was the root cause, why did it survive
+  until now, and is the same defect pattern lurking elsewhere in the codebase?
+  If yes, grep for siblings and report them. Fix them only when asked.
 - If a wrong assumption cost you time, note what evidence would have killed it
   earlier: that is the check to run first next time.
 
