@@ -15,11 +15,11 @@
       "source": "pbakaus/impeccable",
       "sourceType": "github",
       "sourceUrl": "https://github.com/pbakaus/impeccable.git",
-      "commit": "b49177d32788f2dc585c42831d845dacf1ebed2c",
+      "commit": "2fc5e1459efbbf06d92c7306517c286bf12490cf",
       "skillPath": ".agents/skills/impeccable/SKILL.md",
-      "skillFolderHash": "c4298d9d001a41c9c2a3797fddee509bc4dd7ba0",
+      "skillFolderHash": "235e068f9d3fc2402691a14e3e0f4b8ca4b070cb",
       "installedAt": "2026-05-28T00:46:30.953Z",
-      "updatedAt": "2026-11-25T00:10:14.541Z"
+      "updatedAt": "2026-11-27T21:55:04.703Z"
     },
     "codebase-design": {
       "source": "mattpocock/skills",
@@ -74,12 +74,12 @@
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
-      "commit": "d65391149dbb5fe76478e76fa8d5122b2aa5a70e",
+      "commit": "bbadaa631c37af594e5a05c9cefacd9956136b18",
       "skillPath": "skills/engineering/domain-modeling/SKILL.md",
-      "skillFolderHash": "ea30ee454ba264543dbe40737973b1a5afb9f0e6",
+      "skillFolderHash": "db8ef024fb9a7b2022d57289359ae96cff0d8483",
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-11-25T01:25:01.036Z",
-      "updatedAt": "2026-11-25T01:25:01.036Z"
+      "updatedAt": "2026-11-27T21:55:05.347Z"
     },
     "vercel-react-best-practices": {
       "source": "vercel-labs/agent-skills",
