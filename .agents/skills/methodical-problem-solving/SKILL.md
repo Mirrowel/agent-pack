@@ -1,6 +1,6 @@
 ---
 name: methodical-problem-solving
-description: Solve bugs and unexpected behavior in a codebase methodically. Use when debugging any failure whose cause isn't visible on sight: bug, panic, wrong output, flaky behavior, "it used to work", or a fix that didn't hold.
+description: Debug a failure methodically when the cause is not visible on sight: bug, panic, wrong output, flake, regression, or a fix that didn't hold.
 ---
 
 # Methodical Problem Solving
@@ -43,7 +43,7 @@ Scale exception: when the cause is visible on sight (a typo, a missing null chec
 
 ## Phase 4: Prove the root cause
 
-- Spell out 3 to 5 ranked hypotheses before testing any; the first plausible idea anchors. Then test one at a time, each with a *falsifiable prediction*: "if this is the cause, then changing/logging A must show B". Then check.
+- Form one hypothesis at a time and derive a *falsifiable prediction* from it: "if this is the cause, then changing/logging A must show B". Then check.
 - If the prediction fails, the hypothesis is dead. Do not rescue it with epicycles; go back to Phase 3 with what you learned.
 - You have a root cause when you can explain **every** observed symptom from it, including the weird ones. A cause that explains 80% of the symptoms is usually a co-traveler, not the cause.
 - Distinguish the root cause from the place the symptom surfaced. A panic in the renderer caused by a NaN from physics is a physics bug. Fix where the invariant was first violated, not where it was finally noticed.

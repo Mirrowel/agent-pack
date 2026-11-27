@@ -1,6 +1,6 @@
 ---
 name: agent-browser
-description: Headless Chrome over CDP, driven through the shell. The default browser tool everywhere and the only one on CI. Use for any web page task, so opening, reading, clicking, filling, scraping, screenshotting, testing a UI change, QA, bug hunts, accessibility and Web Vitals, console errors, failed requests, logins and saved sessions, and Electron apps. The user's own logged-in browser is the browse skill.
+description: Headless Chrome over CDP through the shell: open, click, fill, screenshot, console, network, a11y, vitals, logins, Electron. Default browser tool and the only one on CI. The user's own browser is browse.
 ---
 
 # agent-browser

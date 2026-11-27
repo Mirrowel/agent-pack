@@ -1,6 +1,6 @@
 ---
 name: writing-documentation
-description: How to write good documentation, according to which audience it is intended for. Use when writing or restructuring documentation (README, guides, API docs, user help), user-facing product copy (UI text, empty states, error messages), or instructions written for agents (skills, AGENTS.md, CLAUDE.md, always-on instruction packs).
+description: Write or restructure documentation for its reader: README, guides, API docs, UI copy, agent instructions. Includes the FOR-AGENTS, SKILL-MECHANICS and COMPRESSION references.
 ---
 
 # Writing documentation
@@ -17,7 +17,7 @@ Think about what information is relevant, and how it needs to be cited.
 
 - **User**: a "how do I do this" guide. Only the app surface, no references to the code.
 - **Developer or Agent**: an introduction to the project, its edge cases and environment specifics, style and implementation guides.
-- **Agent instructions**: short sentences in technical English (ASD-STE100 style), one requirement per sentence, RFC 2119 words (MUST, SHOULD, MAY) with their defined strength. When migrating or compressing such instructions, do not escalate importance: a SHOULD never becomes a MUST. For the structure of such text (skills, `AGENTS.md`, instruction packs): read `FOR-AGENTS.md`; when the document is a skill, also `SKILL-MECHANICS.md`. To shorten such text for the model without losing a rule: `COMPRESSION.md`.
+- **Agent instructions**: short sentences in technical English (ASD-STE100), one requirement per sentence, RFC 2119 words (MUST, SHOULD, MAY) with their defined strength. When migrating or compressing such instructions, do not escalate importance: a SHOULD never becomes a MUST. For the structure of such text (skills, `AGENTS.md`, instruction packs): read `FOR-AGENTS.md`; when the document is a skill, also `SKILL-MECHANICS.md`. To shorten such text for the model without losing a rule: `COMPRESSION.md`.
 
 ## Phase 3: Is this documentation needed?
 

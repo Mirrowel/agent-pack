@@ -1,6 +1,6 @@
 ---
 name: proactive-bug-finding
-description: How to hunt for bugs in code before they're reported. Use when asked to "find bugs", "bug hunt", "look for bugs", "audit this code for bugs", or "what's broken here", without a specific bug report or failing test to start from.
+description: Find real bugs before they are reported: findings with a trigger, a repro and a severity, in the given scope. Not style. Fixes only when asked.
 argument-hint: <path, module, or "recent changes">
 ---
 

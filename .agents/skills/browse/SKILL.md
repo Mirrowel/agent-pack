@@ -1,6 +1,6 @@
 ---
 name: browse
-description: The user's real browser, their Brave or Chrome profile with its logins, sessions and extensions, through the browse CLI. Use only when a task needs what only their browser has, such as a site they are logged into, an SSO or internal page, or their cookies. Headless checks and CI use agent-browser.
+description: The user's real Brave or Chrome with their logins and tabs, through the browse CLI. Use only when a task needs that browser: signed-in sites, SSO, cookies. Otherwise agent-browser.
 ---
 
 # browse
